@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "overrides": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "@typescript-eslint/no-empty-function": "off",
+        "linebreak-style": ["warn", "windows"],
+        "quotes": ["warn", "single", { "avoidEscape": true }],
+        "semi": ["warn", "always"],
+        "react/no-unescaped-entities": "off",
+        "react/jsx-curly-brace-presence": [
+            "warn",
+            { "props": "never", "children": "never" }
+        ],
+        "prettier/prettier": [
+            "warn",
+            {
+                "singleQuote": true,
+                "printWidth": 100,
+                "tabWidth": 4,
+                "endOfLine": "crlf"
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
